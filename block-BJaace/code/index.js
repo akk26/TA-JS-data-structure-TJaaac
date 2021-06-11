@@ -1,14 +1,34 @@
 // 1. Declare an empty array and store it in a variable.
 
+let firstArray = [];
+
 // 2. Now check the type of empty array you declared above.
+
+typeof (firstArray); "object"
 
 // 3. Create an array named `colors` that contains five different names of colors as strings.
 
+let colors = ["Red", "Green", "Blue", "Orange", "Violet"];
+
 // 4. Access the first color in the array and print it to the console using `console.log()`
+
+colors[0]
+
+console.log(colors[0]);
+
 
 // 5. Access the third color in the array and print it to the console using `console.log()`
 
+colors[2]
+
+console.log(colors[2]);
+
 // 6. Access the last color in the array and print it to the console using `console.log()`
+
+colors[4];
+
+console.log(colors[4]);
+
 
 // 7. Write one line of code that changes the value of the first color in the list to "black" (overwriting the previous value).
 
