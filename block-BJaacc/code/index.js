@@ -43,11 +43,16 @@ console.log(students.length)
 students["var"] = "yes";
 
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
+
 console.log(students);
 delete students.isAdult;
 console.log(students);
+
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
 
 students.batch = 17
 
 console.log(students.batch);
+
+
+
