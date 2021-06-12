@@ -4,9 +4,17 @@ let numbers = [60, 25, 30, 45, 10];
 
 // 2. Calculate the sum of array items and print it to the console using console.log()
 
+//for loop
 let sum = 0;
 for (let i = 0; i < numbers.length; i++) {
   sum += numbers[i];
+}
+console.log(sum);
+
+//for of loop
+
+for (number of numbers) {
+  sum += number 
 }
 console.log(sum);
 
@@ -17,7 +25,8 @@ console.log(avg);
 
 // 4. Find the highest number in the array and print it to the console using console.log()
 
-// console.log(Math.max(10, 25, 30, 45, 60));
+// for loop
+
 let high = 0;
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] > high) {
@@ -25,7 +34,20 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log(high);
+
+// for of loop
+
+let highestNumber = numbers[0];
+for (let number of numbers) {
+  if (number > highestNumber) {
+    highestNumber = number
+  }
+}
+console.log(highestNumber)
+
 // 5. Find the lowest number in the array and print it to the console using console.log()
+
+// for loop
 
 let low = high; //60
 for (let i = 0; i<numbers.length ;i++ ) {
@@ -34,6 +56,17 @@ for (let i = 0; i<numbers.length ;i++ ) {
   }
 }
 console.log(low);
+
+// for of loop
+
+let lowestNumber = numbers[0];
+for (let number of numbers) {
+  if (number < lowestNumber) {
+    lowestNumber = number;
+  }
+}
+console.log(lowestNumber);
+
 // 6. Find the even numbers in the array and print them to the console using console.log()
 
 for (let number of numbers) {
