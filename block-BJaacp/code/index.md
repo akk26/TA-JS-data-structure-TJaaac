@@ -11,8 +11,8 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
-- What is the value of obj? // Arya
+- `[10] === [10]` // false Address of both are different
+- What is the value of obj? // {surname: 'Stark'} The first value of `obj` replace by surname: `Stark`
 - `obj == newObj` // false  Address of both are different 
 - `obj === newObj` // false Address of both are different
 - `user === newObj`// false Address of both are different
@@ -24,6 +24,7 @@ Answer the following with reason after going through the above code:
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+![memory-box](./memory-box.jpg)
 
 ```js
 function personDetails(person) {
