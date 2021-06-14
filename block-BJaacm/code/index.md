@@ -15,21 +15,22 @@ let newUser = user;
 - Take a photo/screenshot and add it to the folder `code`
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+![memory-box](./memory-box.jpg)
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true : Output is true because the address of both are same.
+- `user === newUser;` // true : Output is true because the address of both are same.
+- `user.name === newUser.name;` // true : Output is true because the address of both are same.
+- `user.name == newUser.name;` // true : Output is true because the address of both are same.
+- `user.sibling == newUser.sibling;` //true : Output is true because the address of both are same.
+- `user.sibling === newUser.sibling;` // true : Output is true because the address of both are same.
+- `user.sibling == allBrothers;` // false : Output is false because the address are different.
+- `user.sibling === allBrothers;` // false : Output is false because the address are different
+- `brothersCopy === allBrothers;` // false : Output is false because the address are different
+- `brothersCopy == allBrothers;` // false : Output is false because the address are different
+- `brothersCopy == user.sibling;` // true : Output is true because the address of both are same.
+- `brothersCopy === user.sibling;`// true : Output is true because the address of both are same.
+- `brothersCopy[0] === user.sibling[0];`// true : Output is true because the address of both are same.
+- `brothersCopy[1] === user.sibling[1];` // true : Output is true because the address of both are same.
+- `user.sibling[1] === newUser.sibling[1];` // true : Output is true because the address of both are same.
