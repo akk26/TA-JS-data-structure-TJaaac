@@ -16,6 +16,7 @@ let newUser = user;
 
 <!-- To add this image here use ![name](./hello.jpg) -->
 ![memory-box](./memory-box.jpg)
+![memory-box](./memory-box-2.jpg)
 
 2. Answer the following with reason:
 
