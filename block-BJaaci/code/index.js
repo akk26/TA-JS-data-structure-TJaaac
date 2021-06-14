@@ -69,7 +69,8 @@ console.log(movies[1].actors[1]);
 
 // 10. Log the name of the last actor of the thrid movie
 
-console.log(movies[2].actors[2]);
+
+console.log(movies[2].actors[movies[2].actors.length-1]);
 
 
 // 11. Log the name of the second actor (index 1) of the third movie
@@ -78,7 +79,7 @@ console.log(movies[2].actors[1]);
 
 // 12. Log all the genres of the third movie
 
-console.log(movies[2].genres[0]);
+console.log(movies[2].genres);
 
 
 // 13. Log all the genres of the first movie
