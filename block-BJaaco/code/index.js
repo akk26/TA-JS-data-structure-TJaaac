@@ -18,25 +18,17 @@ console.log(collection);
 
 let evenCollection = [];
 
-for (let number of numbers) {
+for (let number of collection) {
   if (number % 2 === 0) evenCollection.push(number);
 }
-for (let numberID of userIds) {
-  if (numberID % 2 === 0) evenCollection.push(numberID);
-}
-
 console.log(evenCollection);
 
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
 
 let oddCollection = [];
-for (let number of numbers) {
+for (let number of collection) {
   if (number % 2 !== 0) oddCollection.push(number);
 }
-for (let numberID of userIds) {
-  if (numberID % 2 !== 0) oddCollection.push(numberID);
-}
-
 console.log(oddCollection);
 
 /*
@@ -55,7 +47,8 @@ console.log(oddCollection);
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
 
-function times(num = 0, str = "") {
+function times(num = 0, str = "test") {
+  if (num < 1) return [];
   var result = [];
   for (let i = 0; i < num; i++) {
     result.push(str);
@@ -91,7 +84,7 @@ function revert(arr) {
   return result;
 }
 
-// Uncomment the code below and test the output
+// // Uncomment the code below and test the output
 // console.log(revert([1, 2, 3, 4])); // [4, 3, 2, 1]
 // console.log(revert(['a', 'd', 'c', 'b'])); // ['b', 'c', 'd', 'a']
 // console.log(revert(['Ryan', 'John', 'Bran'])); //['Bran', 'John', 'Ryan']
@@ -147,6 +140,6 @@ function arrayToObj(arr) {
 }
 
 // Uncomment the code below and test the output
-// console.log(arrayToObj([1, 2, 3, 4])); // {0: 1, 1: 2, 2: 3, 3: 4}
-// console.log(arrayToObj(['a', undefined, 'd'])); // {0: 'a', 1: undefined, 2: 'd'}
-// console.log(arrayToObj(['Ryan', 'John'])); // {0: 'Ryan', 1: 'John'}
+console.log(arrayToObj([1, 2, 3, 4])); // {0: 1, 1: 2, 2: 3, 3: 4}
+console.log(arrayToObj(['a', undefined, 'd'])); // {0: 'a', 1: undefined, 2: 'd'}
+console.log(arrayToObj(['Ryan', 'John'])); // {0: 'Ryan', 1: 'John'}
