@@ -34,24 +34,15 @@ for (let house of got.houses) {
 
 // 4. Log the name of all the people in house Starks (index 0) one by one
 
-for (let house of got.houses) {
-  for (let person of house.people) {
-    if (house.name === "Starks") {
-      console.log(person);
-    }
-  }
+for (let person of got.houses[0].people) {
+  console.log(person.name);
 }
 
 // 5. Log the name of all the people in house Lannisters (index 1) one by one
 
-for (let house of got.houses) {
-  for (let person of house.people) {
-    if (house.name === "Lannisters") {
-      console.log(person);
-    }
-  }
+for (let person of got.houses[1].people) {
+  console.log(person.name);
 }
-
 // 6. Log the description of all the people in house Lannisters (index 1) one by one
 
 for ( let detail of got.houses[1].people) {
